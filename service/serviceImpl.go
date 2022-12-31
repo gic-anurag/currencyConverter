@@ -50,6 +50,7 @@ func (e *Currency) Insert(curr []model.Currency) (int, error) {
 	return insertDocs, nil
 }
 
+// convert this
 func (e *Currency) Convert(amount model.Converter) (float64, error) {
 	var currency []*model.Currency
 
