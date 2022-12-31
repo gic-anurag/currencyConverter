@@ -37,6 +37,7 @@ func (e *Currency) Connect() {
 	Collection = client.Database(e.Database).Collection(e.Collection)
 }
 
+// For insert currency
 func (e *Currency) Insert(curr []model.Currency) (int, error) {
 	for i := range curr {
 		_, err := Collection.InsertOne(ctx, curr[i])
