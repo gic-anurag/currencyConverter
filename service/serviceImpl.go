@@ -79,3 +79,6 @@ func (e *Currency) Convert(amount model.Converter) (float64, error) {
 
 	return convrt, nil
 }
+
+//ended
+//successfully
